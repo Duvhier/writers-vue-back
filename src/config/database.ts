@@ -4,8 +4,8 @@ import { Book } from "../entities/Book.entity";
 
 export const AppDataSource = new DataSource({
     type: "sqlite",
-    database: "db.sqlite",
-    synchronize: true,
+    database: "data/db.sqlite",
+    synchronize: false,
     logging: false,
     entities: [Writer, Book],
 }); 
