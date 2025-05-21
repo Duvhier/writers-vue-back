@@ -26,15 +26,4 @@ app.use("/books", bookRouter as Router);
 app.use(notFoundHandler);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 3000;
-
-AppDataSource.initialize()
-    .then(() => {
-        app.listen(PORT, () => {
-            console.log(`🚀 Server running on http://localhost:${PORT}`);
-        });
-    })
-    .catch((err: Error) => {
-        console.error("DB init error:", err);
-        process.exit(1);
-    });
+export default app;

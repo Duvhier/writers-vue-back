@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/node": "^5.1.16",
     "express": "^5.1.0",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^5.1.7",
